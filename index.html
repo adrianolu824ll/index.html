@@ -1,46 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="5;url=https://chat.whatsapp.com/GKGECrC9Q6EJN7Xq29xt9q">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LKzin Vendas</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(145deg, #000000, #1a1a1a);
-      color: #fff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toque Mágico</title>
 
-    h1 {
-      font-size: 3em;
-      color: red;
-      text-shadow: 3px 3px 6px #000, 0 0 15px #ff0000;
-      margin-bottom: 20px;
-    }
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
 
-    p {
-      color: #ccc;
-      font-size: 1.2em;
-    }
+        body{
+            background:#ffffff;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
 
-    .loading {
-      margin-top: 30px;
-      font-size: 1em;
-      color: #ff3333;
-    }
-  </style>
+        .container{
+            background:#ffe4ef;
+            width:90%;
+            max-width:420px;
+            padding:40px 30px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,.15);
+        }
+
+        h1{
+            color:#ff4d94;
+            margin-bottom:15px;
+            font-size:2.2rem;
+        }
+
+        p{
+            color:#555;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:block;
+            width:100%;
+            padding:15px;
+            margin:15px 0;
+            text-decoration:none;
+            color:#fff;
+            background:#ff4d94;
+            border-radius:12px;
+            font-size:18px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#e63d82;
+            transform:scale(1.03);
+        }
+
+        .btn.secundario{
+            background:#ff80b5;
+        }
+
+        .btn.secundario:hover{
+            background:#ff66a3;
+        }
+
+        footer{
+            margin-top:25px;
+            color:#777;
+            font-size:14px;
+        }
+    </style>
 </head>
 <body>
-  <h1>LKzin Vendas</h1>
-  <p>Você está sendo redirecionado para nosso grupo oficial no WhatsApp...</p>
-  <p class="loading">Aguarde alguns segundos...</p>
+
+<div class="container">
+    <h1>✨ Toque Mágico ✨</h1>
+
+    <p>Escolha uma das opções abaixo para entrar em contato.</p>
+
+    <a class="btn" href="https://wa.me/5511943374143" target="_blank">
+        📱 Entrar em Contato pelo WhatsApp
+    </a>
+
+    <a class="btn secundario" href="tel:+5511943374143">
+        📞 Ligar Agora
+    </a>
+
+    <footer>
+        +55 11 94337-4143
+    </footer>
+</div>
+
 </body>
 </html>
