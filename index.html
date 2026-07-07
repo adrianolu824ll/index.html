@@ -1,100 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toque Mágico</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toque Mágico</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        body{
-            background:#ffffff;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            min-height:100vh;
-        }
+body{
+    background:linear-gradient(135deg,#fff,#ffe6f2);
+    color:#d63384;
+    overflow-x:hidden;
+}
 
-        .container{
-            background:#ffe4ef;
-            width:90%;
-            max-width:420px;
-            padding:40px 30px;
-            border-radius:20px;
-            text-align:center;
-            box-shadow:0 10px 25px rgba(0,0,0,.15);
-        }
+header{
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(90deg,#ffb6d9,#ffffff);
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
 
-        h1{
-            color:#ff4d94;
-            margin-bottom:15px;
-            font-size:2.2rem;
-        }
+header h1{
+    font-size:48px;
+}
 
-        p{
-            color:#555;
-            margin-bottom:30px;
-        }
+header p{
+    font-size:18px;
+    margin-top:10px;
+}
 
-        .btn{
-            display:block;
-            width:100%;
-            padding:15px;
-            margin:15px 0;
-            text-decoration:none;
-            color:#fff;
-            background:#ff4d94;
-            border-radius:12px;
-            font-size:18px;
-            font-weight:bold;
-            transition:.3s;
-        }
+.decoracao{
+    font-size:35px;
+    margin-top:15px;
+}
 
-        .btn:hover{
-            background:#e63d82;
-            transform:scale(1.03);
-        }
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
 
-        .btn.secundario{
-            background:#ff80b5;
-        }
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(255,105,180,.2);
+    border:3px solid #ffc0cb;
+}
 
-        .btn.secundario:hover{
-            background:#ff66a3;
-        }
+.card h2{
+    margin-bottom:15px;
+    color:#ff1493;
+}
 
-        footer{
-            margin-top:25px;
-            color:#777;
-            font-size:14px;
-        }
-    </style>
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:15px 30px;
+    background:#ff4fa3;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#d63384;
+    transform:scale(1.05);
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#ffd6eb;
+    color:#c2185b;
+    margin-top:30px;
+    font-weight:bold;
+}
+
+.flores{
+    position:fixed;
+    font-size:28px;
+    opacity:.25;
+}
+
+.f1{top:20px;left:20px;}
+.f2{top:100px;right:25px;}
+.f3{bottom:30px;left:35px;}
+.f4{bottom:80px;right:20px;}
+</style>
 </head>
+
 <body>
 
-<div class="container">
+<div class="flores f1">🌸</div>
+<div class="flores f2">🌷</div>
+<div class="flores f3">🌺</div>
+<div class="flores f4">💐</div>
+
+<header>
     <h1>✨ Toque Mágico ✨</h1>
+    <p>Transformando momentos com carinho e magia.</p>
+    <div class="decoracao">
+        🌸 🪔 🌷 💖 🌺
+    </div>
+</header>
 
-    <p>Escolha uma das opções abaixo para entrar em contato.</p>
+<div class="container">
 
-    <a class="btn" href="https://wa.me/5511943374143" target="_blank">
-        📱 Entrar em Contato pelo WhatsApp
-    </a>
+    <div class="card">
+        <h2>📱 Opção 1 - WhatsApp</h2>
+        <p>Fale conosco diretamente pelo WhatsApp.</p>
 
-    <a class="btn secundario" href="tel:+5511943374143">
-        📞 Ligar Agora
-    </a>
+        <a class="btn"
+        href="https://wa.me/5511943374143"
+        target="_blank">
+        Entrar em Contato
+        </a>
+    </div>
 
-    <footer>
-        +55 11 94337-4143
-    </footer>
+    <div class="card">
+        <h2>📞 Opção 2 - Ligar</h2>
+        <p>Se preferir, faça uma ligação.</p>
+
+        <a class="btn"
+        href="tel:+5511943374143">
+        Ligar Agora
+        </a>
+    </div>
+
 </div>
+
+<footer>
+🌸 Toque Mágico • WhatsApp: +55 11 94337-4143 • 🪔 Feito com carinho 💖
+</footer>
 
 </body>
 </html>
